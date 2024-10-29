@@ -5,25 +5,19 @@
 Install the dependencies:
 
 ```bash
-pnpm install
+npm i
 ```
 
 ## Get Started
 
-Start the dev server:
+Start the storybook:
 
 ```bash
-pnpm dev
+npm run storybook
 ```
 
-Build the app for production:
+Get test coverage:
 
 ```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
+npm run test-storybook-coverage
 ```
