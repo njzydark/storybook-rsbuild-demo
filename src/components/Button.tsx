@@ -1,7 +1,17 @@
-export const Button = () => {
+type Props = {
+  /** 点击回调 */
+  onClick?: () => void;
+  /**
+   *  名称
+   * @default button
+   */
+  name?: string;
+};
+
+export const Button = ({ onClick, name = 'button' }: Props) => {
   const handleClick = () => {
-    console.log('click');
+    onClick?.();
   };
 
-  return <div onClick={handleClick}>button</div>;
+  return <div onClick={handleClick}>{name}</div>;
 };
